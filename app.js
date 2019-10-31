@@ -24,6 +24,9 @@ app.get("/virus", function(req, res) {
     res.render("virus.html");
 });
 
+app.get("/faker", function(req, res) {
+    res.render("faker.html");
+})
 //server listener
 app.listen(process.env.PORT, process.env.IP, function () {
     console.log("Server is running...");

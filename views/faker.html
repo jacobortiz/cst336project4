@@ -1,0 +1,20 @@
+<% include partials/header %>
+    <div id="warpper"></div>
+        <script>
+            
+            
+            for (var i=0 ;i<10;i++) {
+              jQuery('<div/>', {
+              text: faker.name.findName() + '-' + faker.company.companyName()
+              }).appendTo('#wrapper');
+              jQuery('<img/>', {
+              src: faker.image.avatar()
+              }).appendTo('#wrapper');
+            }
+
+        </script>
+    <h3>
+        Couldn't figure out how to use faker ):
+    </h3>
+    
+<% include partials/footer %>
